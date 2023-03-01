@@ -12,11 +12,14 @@ const NavBar = () => {
 					</div>
 					<ul>
 						<li>
-							<NavLink to="/">Home</NavLink>
+							<NavLink to="/">Home (UseEffect)</NavLink>
 						</li>
 					
 						<li>
-							<NavLink to="/products">Products</NavLink>
+							<NavLink to="/products">Products (UseEffect)</NavLink>
+						</li>
+						<li>
+							<NavLink to="/input-ref">Input Ref (useRef)</NavLink>
 						</li>
 					</ul>
 				</div>

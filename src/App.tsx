@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import LoadData from './load-data';
 import NoFound from './no-found';
 import NavBar from './nav-bar';
+import InputRef from './input-ref';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
        <Routes>
           <Route path="/" element={<WitdhWindow />} />
           <Route path="/products" element={<LoadData />} />
+          <Route path="/input-ref" element={<InputRef />} />
           <Route path="*" element={<NoFound />} />
        </Routes>   
         </div>
