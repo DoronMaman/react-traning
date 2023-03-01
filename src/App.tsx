@@ -1,25 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import WitdhWindow from './witdth-window';
+import { Route, Routes } from 'react-router-dom';
+import LoadData from './load-data';
+import NoFound from './no-found';
+import NavBar from './nav-bar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <NavBar />
+       <Routes>
+          <Route path="/" element={<WitdhWindow />} />
+          <Route path="/products" element={<LoadData />} />
+          <Route path="*" element={<NoFound />} />
+       </Routes>   
+        </div>
   );
 }
 
