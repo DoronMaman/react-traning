@@ -21,6 +21,9 @@ const NavBar = () => {
 						<li>
 							<NavLink to="/input-ref">Input Ref (useRef)</NavLink>
 						</li>
+						<li>
+							<NavLink to="/item-context">Item List (Context)</NavLink>
+						</li>
 					</ul>
 				</div>
 			</nav>
